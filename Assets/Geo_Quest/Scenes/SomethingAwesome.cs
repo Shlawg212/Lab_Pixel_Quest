@@ -16,6 +16,9 @@ public class SomethingAwesome : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            transform.position += new Vector3(0.1f, 0, 0);
+        }
     }
 }
